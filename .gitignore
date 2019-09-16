@@ -1,0 +1,5 @@
+libxul.so
+./libxul.so
+/libxul.so
+*.swp
+

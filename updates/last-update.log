@@ -1,0 +1,11 @@
+Performing a replace request
+PATCH DIRECTORY /media/wellington/82eb80d7-628c-41a3-b046-c40ab727aaaf/home/wellington/softwares/firefox/updates/0
+INSTALLATION DIRECTORY /media/wellington/82eb80d7-628c-41a3-b046-c40ab727aaaf/home/wellington/softwares/firefox
+WORKING DIRECTORY /media/wellington/82eb80d7-628c-41a3-b046-c40ab727aaaf/home/wellington/softwares/firefox/updated
+Begin moving destDir (/media/wellington/82eb80d7-628c-41a3-b046-c40ab727aaaf/home/wellington/softwares/firefox) to tmpDir (/media/wellington/82eb80d7-628c-41a3-b046-c40ab727aaaf/home/wellington/softwares/firefox.bak)
+rename_file: proceeding to rename the directory
+Begin moving newDir (/media/wellington/82eb80d7-628c-41a3-b046-c40ab727aaaf/home/wellington/softwares/firefox.bak/updated) to destDir (/media/wellington/82eb80d7-628c-41a3-b046-c40ab727aaaf/home/wellington/softwares/firefox)
+rename_file: proceeding to rename the directory
+Now, remove the tmpDir
+succeeded
+calling QuitProgressUI
