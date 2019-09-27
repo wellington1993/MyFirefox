@@ -32,9 +32,9 @@ git add -f -A &
 
 echo 'Kill non closed firefox'
 echo 'Matando firefox nao fechados'
-sudo ps auxf |egrep -i "Firefox|Defunct" |egrep -v "grep|kill|chown|sudo|python|git|bash|python|\.sh" |awk '{print $2}' |xargs sudo kill -9 -1 ;
-sudo ps auxf |egrep -i "Firefox|Defunct" |egrep -v "grep|kill|chown|sudo|python|git|bash|python|\.sh" |awk '{print $2}' |xargs sudo kill -9 -1 ;
-sudo killall -g -9 firefox 2>/dev/null
+ps auxf |egrep -i "Firefox|Defunct" |egrep -v "grep|kill|chown|sudo|python|git|bash|python|\.sh" |awk '{print $2}' |xargs sudo kill -9 -1 ;
+ps auxf |egrep -i "Firefox|Defunct" |egrep -v "grep|kill|chown|sudo|python|git|bash|python|\.sh" |awk '{print $2}' |xargs sudo kill -9 -1 ;
+killall -g -9 firefox 2>/dev/null
 
 echo 'Rust Backtrace: On, Debug, Webrender'
 export DEBUG=1; export RUST_BACKTRACE=1; export MOZ_WEBRENDER=1; export MOZ_ACCELERATED=1 ; export MOZ_LOG=Widget:5 ;
