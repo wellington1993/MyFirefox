@@ -42,7 +42,7 @@ export DEBUG=1; export RUST_BACKTRACE=1; export MOZ_WEBRENDER=1; export MOZ_ACCE
 
 echo 'Starting Firefox' ;
 echo 'Iniciando Firefox' ;
-nice -n 19 -- ionice -c 3 "./firefox -g --sync --browser --setDefaultBrowser --display=$DISPLAY |ccze";
+nice -n 19 -- ionice -c 3 ./firefox -g --sync --browser --setDefaultBrowser --display=$DISPLAY |ccze;
 
 echo 'Kill Defunct and not closed firefox'
 
