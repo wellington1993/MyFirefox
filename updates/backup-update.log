@@ -18,9 +18,11 @@ PREPARE ADD libsoftokn3.chk
 PREPARE ADD libnssdbm3.chk
 PREPARE PATCH libnspr4.so
 PREPARE PATCH libmozsqlite3.so
+PREPARE PATCH libmozsandbox.so
 PREPARE PATCH libmozavcodec.so
 PREPARE ADD libfreeblpriv3.chk
 PREPARE PATCH gmp-clearkey/0.1/libclearkey.so.sig
+PREPARE PATCH gmp-clearkey/0.1/libclearkey.so
 PREPARE PATCH firefox.sig
 PREPARE PATCH firefox-bin.sig
 PREPARE PATCH firefox-bin
@@ -43,9 +45,11 @@ EXECUTE ADD libsoftokn3.chk
 EXECUTE ADD libnssdbm3.chk
 EXECUTE PATCH libnspr4.so
 EXECUTE PATCH libmozsqlite3.so
+EXECUTE PATCH libmozsandbox.so
 EXECUTE PATCH libmozavcodec.so
 EXECUTE ADD libfreeblpriv3.chk
 EXECUTE PATCH gmp-clearkey/0.1/libclearkey.so.sig
+EXECUTE PATCH gmp-clearkey/0.1/libclearkey.so
 EXECUTE PATCH firefox.sig
 EXECUTE PATCH firefox-bin.sig
 EXECUTE PATCH firefox-bin
@@ -68,9 +72,11 @@ FINISH ADD libsoftokn3.chk
 FINISH ADD libnssdbm3.chk
 FINISH PATCH libnspr4.so
 FINISH PATCH libmozsqlite3.so
+FINISH PATCH libmozsandbox.so
 FINISH PATCH libmozavcodec.so
 FINISH ADD libfreeblpriv3.chk
 FINISH PATCH gmp-clearkey/0.1/libclearkey.so.sig
+FINISH PATCH gmp-clearkey/0.1/libclearkey.so
 FINISH PATCH firefox.sig
 FINISH PATCH firefox-bin.sig
 FINISH PATCH firefox-bin
