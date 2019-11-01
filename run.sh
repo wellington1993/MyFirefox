@@ -39,7 +39,7 @@ killall -g -9 firefox 2>/dev/null
 echo 'Rust Backtrace: On, Debug, Webrender, Git'
 export DEBUG=1; export RUST_BACKTRACE=1 ;
 export MOZ_WEBRENDER=1; export MOZ_ACCELERATED=1 ; export MOZ_LOG=Widget:5 ;
-export GIT_CURL_VERBOSE=1 ;
+export GIT_CURL_VERBOSE=1 ; export GIT_TRACE=2;
 # export DISPLAY=:0 ;
 
 echo 'Starting Firefox' ;
