@@ -36,8 +36,10 @@ ps auxf |egrep -i "Firefox|Defunct" |egrep -v "grep|kill|chown|sudo|python|git|b
 ps auxf |egrep -i "Firefox|Defunct" |egrep -v "grep|kill|chown|sudo|python|git|bash|python|\.sh" |awk '{print $2}' |xargs kill -9 -1 ;
 killall -g -9 firefox 2>/dev/null
 
-echo 'Rust Backtrace: On, Debug, Webrender'
-export DEBUG=1; export RUST_BACKTRACE=1; export MOZ_WEBRENDER=1; export MOZ_ACCELERATED=1 ; export MOZ_LOG=Widget:5 ;
+echo 'Rust Backtrace: On, Debug, Webrender, Git'
+export DEBUG=1; export RUST_BACKTRACE=1 ;
+export MOZ_WEBRENDER=1; export MOZ_ACCELERATED=1 ; export MOZ_LOG=Widget:5 ;
+export GIT_CURL_VERBOSE=1 ;
 # export DISPLAY=:0 ;
 
 echo 'Starting Firefox' ;
@@ -54,29 +56,29 @@ rm -f libxul.so 2>/dev/null ;
 
 # Git add
 echo 'Git add All, commit, push, merge & push again'
-git add -A ;
-git commit -s -m "'$(date)'" ;
+git add -A -v;
+git commit -s -m "'$(date)'" -v;
 # Important
-git push --set-upstream origin master ;
-git push -f origin master ;
-git merge --allow-unrelated ;
-git push --all ;
-git push -f origin master ;
+git push --set-upstream origin master -v ;
+git push -f origin master -v ;
+git merge --allow-unrelated -v ;
+git push --all -v ;
+git push -f origin master -v ;
 
 # Fix 1
 echo 'Git Remove libxul, commit, pull, push'
-git rm --cached libxul.so 2>/dev/null ;
-git commit --amend -CHEAD ;
-git pull --no-edit ;
-git push ;
+git rm -v --cached libxul.so 2>/dev/null ;
+git commit -v --amend -CHEAD ;
+git pull -v --no-edit ;
+git push -v ;
 
 # Fix 2
 echo 'Git Reset Mixed, add, commit & push'
-git reset --mixed origin/master ;
-git add . ;
-git commit -m "'$(date)'" ;
-git push origin master ;
-git push -f origin master ;
+git reset -v --mixed origin/master ;
+git add -v . ;
+git commit -v -m "'$(date)'" ;
+git push -v origin master ;
+git push -v -f origin master ;
 
 # Remove Git lock
 echo 'remove Git log' ;
