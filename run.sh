@@ -74,7 +74,7 @@ git push -v ;
 
 # Fix 2
 echo 'Git Reset Mixed, add, commit & push'
-git reset -v --mixed origin/master ;
+git reset --mixed origin/master ;
 git add -v . ;
 git commit -v -m "'$(date)'" ;
 git push -v origin master ;
