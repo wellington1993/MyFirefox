@@ -23,9 +23,9 @@ PREPARE PATCH gmp-clearkey/0.1/libclearkey.so.sig
 PREPARE PATCH firefox.sig
 PREPARE PATCH firefox-bin.sig
 PREPARE PATCH firefox-bin
+PREPARE PATCH crashreporter
 PREPARE ADD chrome.manifest
 PREPARE PATCH browser/omni.ja
-PREPARE PATCH browser/blocklist.xml
 PREPARE PATCH application.ini
 EXECUTE PATCH updater
 EXECUTE ADD removed-files
@@ -48,9 +48,9 @@ EXECUTE PATCH gmp-clearkey/0.1/libclearkey.so.sig
 EXECUTE PATCH firefox.sig
 EXECUTE PATCH firefox-bin.sig
 EXECUTE PATCH firefox-bin
+EXECUTE PATCH crashreporter
 EXECUTE ADD chrome.manifest
 EXECUTE PATCH browser/omni.ja
-EXECUTE PATCH browser/blocklist.xml
 EXECUTE PATCH application.ini
 FINISH PATCH updater
 FINISH ADD removed-files
@@ -73,9 +73,9 @@ FINISH PATCH gmp-clearkey/0.1/libclearkey.so.sig
 FINISH PATCH firefox.sig
 FINISH PATCH firefox-bin.sig
 FINISH PATCH firefox-bin
+FINISH PATCH crashreporter
 FINISH ADD chrome.manifest
 FINISH PATCH browser/omni.ja
-FINISH PATCH browser/blocklist.xml
 FINISH PATCH application.ini
 succeeded
 calling QuitProgressUI
