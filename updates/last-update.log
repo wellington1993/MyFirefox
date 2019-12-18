@@ -13,17 +13,21 @@ PREPARE PATCH omni.ja
 PREPARE PATCH minidump-analyzer
 PREPARE PATCH libxul.so.sig
 PREPARE PATCH libxul.so
+PREPARE PATCH libssl3.so
+PREPARE PATCH libsoftokn3.so
 PREPARE ADD libsoftokn3.chk
+PREPARE PATCH libsmime3.so
 PREPARE PATCH libplds4.so
 PREPARE PATCH libplc4.so
-PREPARE ADD libnssdbm3.chk
+PREPARE PATCH libnssutil3.so
+PREPARE PATCH libnss3.so
 PREPARE PATCH libnspr4.so
 PREPARE PATCH libmozsqlite3.so
 PREPARE PATCH libmozsandbox.so
 PREPARE PATCH libmozavcodec.so
+PREPARE PATCH libfreeblpriv3.so
 PREPARE ADD libfreeblpriv3.chk
 PREPARE PATCH gmp-clearkey/0.1/libclearkey.so.sig
-PREPARE PATCH gmp-clearkey/0.1/libclearkey.so
 PREPARE PATCH firefox.sig
 PREPARE PATCH firefox-bin.sig
 PREPARE PATCH firefox-bin
@@ -41,7 +45,27 @@ EXECUTE PATCH omni.ja
 EXECUTE PATCH minidump-analyzer
 EXECUTE PATCH libxul.so.sig
 EXECUTE PATCH libxul.so
-### execution failed
+EXECUTE PATCH libssl3.so
+EXECUTE PATCH libsoftokn3.so
+EXECUTE ADD libsoftokn3.chk
+EXECUTE PATCH libsmime3.so
+EXECUTE PATCH libplds4.so
+EXECUTE PATCH libplc4.so
+EXECUTE PATCH libnssutil3.so
+EXECUTE PATCH libnss3.so
+EXECUTE PATCH libnspr4.so
+EXECUTE PATCH libmozsqlite3.so
+EXECUTE PATCH libmozsandbox.so
+EXECUTE PATCH libmozavcodec.so
+EXECUTE PATCH libfreeblpriv3.so
+EXECUTE ADD libfreeblpriv3.chk
+EXECUTE PATCH gmp-clearkey/0.1/libclearkey.so.sig
+EXECUTE PATCH firefox.sig
+EXECUTE PATCH firefox-bin.sig
+EXECUTE PATCH firefox-bin
+EXECUTE PATCH crashreporter
+EXECUTE PATCH browser/omni.ja
+EXECUTE PATCH application.ini
 FINISH PATCH updater
 FINISH ADD removed-files
 FINISH ADD precomplete
@@ -53,39 +77,26 @@ FINISH PATCH omni.ja
 FINISH PATCH minidump-analyzer
 FINISH PATCH libxul.so.sig
 FINISH PATCH libxul.so
+FINISH PATCH libssl3.so
+FINISH PATCH libsoftokn3.so
 FINISH ADD libsoftokn3.chk
-backup_restore: backup file doesn't exist: libsoftokn3.chk.moz-backup
+FINISH PATCH libsmime3.so
 FINISH PATCH libplds4.so
-backup_restore: backup file doesn't exist: libplds4.so.moz-backup
 FINISH PATCH libplc4.so
-backup_restore: backup file doesn't exist: libplc4.so.moz-backup
-FINISH ADD libnssdbm3.chk
-backup_restore: backup file doesn't exist: libnssdbm3.chk.moz-backup
+FINISH PATCH libnssutil3.so
+FINISH PATCH libnss3.so
 FINISH PATCH libnspr4.so
-backup_restore: backup file doesn't exist: libnspr4.so.moz-backup
 FINISH PATCH libmozsqlite3.so
-backup_restore: backup file doesn't exist: libmozsqlite3.so.moz-backup
 FINISH PATCH libmozsandbox.so
-backup_restore: backup file doesn't exist: libmozsandbox.so.moz-backup
 FINISH PATCH libmozavcodec.so
-backup_restore: backup file doesn't exist: libmozavcodec.so.moz-backup
+FINISH PATCH libfreeblpriv3.so
 FINISH ADD libfreeblpriv3.chk
-backup_restore: backup file doesn't exist: libfreeblpriv3.chk.moz-backup
 FINISH PATCH gmp-clearkey/0.1/libclearkey.so.sig
-backup_restore: backup file doesn't exist: gmp-clearkey/0.1/libclearkey.so.sig.moz-backup
-FINISH PATCH gmp-clearkey/0.1/libclearkey.so
-backup_restore: backup file doesn't exist: gmp-clearkey/0.1/libclearkey.so.moz-backup
 FINISH PATCH firefox.sig
-backup_restore: backup file doesn't exist: firefox.sig.moz-backup
 FINISH PATCH firefox-bin.sig
-backup_restore: backup file doesn't exist: firefox-bin.sig.moz-backup
 FINISH PATCH firefox-bin
-backup_restore: backup file doesn't exist: firefox-bin.moz-backup
 FINISH PATCH crashreporter
-backup_restore: backup file doesn't exist: crashreporter.moz-backup
 FINISH PATCH browser/omni.ja
-backup_restore: backup file doesn't exist: browser/omni.ja.moz-backup
 FINISH PATCH application.ini
-backup_restore: backup file doesn't exist: application.ini.moz-backup
-failed: 64
+succeeded
 calling QuitProgressUI
